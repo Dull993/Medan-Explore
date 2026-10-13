@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Medan | Wisata Kota Medan</title>
+    <meta
+      name="description"
+      content="Informasi wisata Medan Explore: destinasi sejarah, alam, rekreasi, dan kuliner di Kota Medan dan sekitarnya."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Figtree:wght@400;500;600&family=Noto+Naskh+Arabic&family=Noto+Sans+Batak&family=Noto+Sans+Tamil&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-amber-50 text-stone-900 antialiased">
+    <!-- NAVBAR -->
+    <header
+      id="navbar"
+      class="dark-zone group fixed inset-x-0 top-0 z-50 border-b border-green-950/15 bg-amber-50"
+    >
+      <nav
+        class="mx-auto flex h-16 w-full max-w-xxl items-center justify-between px-6"
+        aria-label="Navigasi utama"
+      >
+        <a
+          href="index.html"
+          class="flex items-center gap-2.5 font-display text-xl font-bold text-green-950 group-data-open:text-yellow-500"
+        >
+          Medan Explore
+        </a>
+
+        <ul
+          id="menu"
+          class="fixed inset-0 -z-10 flex translate-x-full flex-col bg-green-950 px-6 pt-24 font-display text-4xl font-bold text-amber-50 transition-transform duration-300 md:static md:z-auto md:translate-x-0 md:flex-row md:items-center md:gap-8 md:bg-transparent md:p-0 md:text-base md:font-medium md:text-stone-900 md:transition-none"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="block py-3 md:py-1 md:underline-offset-8 md:hover:underline md:decoration-2 md:decoration-yellow-600"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="destinasi.html"
+              class="block py-3 md:py-1 md:underline-offset-8 md:hover:underline md:decoration-2 md:decoration-yellow-600"
+              >Destinasi</a
+            >
+          </li>
+          <li>
+            <a
+              href="kuliner.html"
+              class="block py-3 md:py-1 md:underline-offset-8 md:hover:underline md:decoration-2 md:decoration-yellow-600"
+              >Kuliner</a
+            >
+          </li>
+          <li>
+            <a
+              href="gallery.html"
+              class="block py-3 md:py-1 md:underline-offset-8 md:hover:underline md:decoration-2 md:decoration-yellow-600"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block py-3 md:py-1 md:underline-offset-8 md:hover:underline md:decoration-2 md:decoration-yellow-600"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <button
+          id="menu-btn"
+          type="button"
+          class="-mr-2 grid size-11 place-items-center group-data-open:text-amber-50 md:hidden"
+          aria-label="Buka menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            class="size-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <path id="icon-open" d="M4 7h16M4 12h16M4 17h16" />
+            <path id="icon-close" class="hidden" d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </nav>
+    </header>
