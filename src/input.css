@@ -1,5 +1,72 @@
 @import "tailwindcss";
 
-* {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+body {
+  font-family: "Figtree", "Segoe UI", Tahoma, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+@media (min-width: 48rem) {
+  #menu {
+    font-family: "Figtree", "Segoe UI", Tahoma, sans-serif;
+  }
+}
+
+.aksara {
+  font-family: "Figtree", "Noto Naskh Arabic", "Noto Sans Batak", "Noto Sans Tamil", "Noto Sans SC", "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+:focus-visible {
+  outline: 3px solid #991b1b;
+  outline-offset: 3px;
+}
+
+.dark-zone :focus-visible {
+  outline-color: #eab308;
+}
+
+.pucuk {
+  height: 12px;
+  background-image: url("./images/pucuk-rebung.svg");
+  background-repeat: repeat-x;
+  background-position: bottom left;
+}
+
+.motif {
+  background-image: url("./images/motif-songket.svg");
+  background-size: 36px 36px;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .rise {
+    animation: none;
+  }
 }
